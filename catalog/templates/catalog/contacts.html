@@ -48,23 +48,24 @@
                     <h4 class="my-0 font-weight-normal">Свяжитесь с нами</h4>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="" class="form-floating">
+                    <form method="post">
                         {% csrf_token %}
                         <div class="mb-3">
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
+                            <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                            <input name='name' type="text" class="form-control"
+                                   id="exampleFormControlInput1">
                         </div>
                         <div class="mb-3">
-                            <label for="phone">Телефон</label>
-                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Контактный телефон" required>
+                            <label for="exampleFormControlInput1" class="form-label">Телефон</label>
+                            <input name='phone' type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="mb-3">
-                            <label for="message">Сообщение</label>
-                            <textarea type="text" name="message" class="form-control" id="message" placeholder="Контактный телефон" required></textarea>
+                            <label for="exampleFormControlInput1" class="form-label">Сообщение</label>
+                            <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                                      rows="3"></textarea>
                         </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
-                    <input type="submit">
-                    <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Отправить</button>
                 </div>
             </div>
         </div>
